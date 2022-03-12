@@ -1,0 +1,160 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MagHub = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local BottomBar = Instance.new("Frame")
+local Heading = Instance.new("TextLabel")
+local SubHeading = Instance.new("TextLabel")
+local Enter = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Cancel = Instance.new("TextButton")
+local DropShadow = Instance.new("ImageLabel")
+local input = Instance.new("ImageButton")
+
+--Properties:
+
+MagHub.Name = "MagHub"
+MagHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+UI.Name = "UI"
+UI.Parent = MagHub
+UI.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+UI.BorderSizePixel = 0
+UI.Position = UDim2.new(0.386000007, 0, 0.363999993, 0)
+UI.Size = UDim2.new(0, 547, 0, 246)
+UI.ZIndex = 2
+
+TopBar.Name = "TopBar"
+TopBar.Parent = UI
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 547, 0, 4)
+TopBar.ZIndex = 100
+
+BottomBar.Name = "BottomBar"
+BottomBar.Parent = UI
+BottomBar.BackgroundColor3 = Color3.fromRGB(230, 230, 230)
+BottomBar.BorderSizePixel = 0
+BottomBar.Position = UDim2.new(0, 0, 0.715934992, 0)
+BottomBar.Size = UDim2.new(0, 547, 0, 72)
+BottomBar.ZIndex = 100
+
+Heading.Name = "Heading"
+Heading.Parent = UI
+Heading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Heading.BackgroundTransparency = 1.000
+Heading.Position = UDim2.new(0.151736751, 0, 0.106312767, 0)
+Heading.Size = UDim2.new(0, 424, 0, 50)
+Heading.ZIndex = 100
+Heading.Font = Enum.Font.GothamSemibold
+Heading.Text = "ENTER"
+Heading.TextColor3 = Color3.fromRGB(67, 67, 67)
+Heading.TextSize = 24.000
+Heading.TextXAlignment = Enum.TextXAlignment.Left
+
+SubHeading.Name = "SubHeading"
+SubHeading.Parent = Heading
+SubHeading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubHeading.BackgroundTransparency = 1.000
+SubHeading.Position = UDim2.new(-0.0062821582, 0, 0.860000014, 0)
+SubHeading.Size = UDim2.new(0, 365, 0, 104)
+SubHeading.ZIndex = 101
+SubHeading.Font = Enum.Font.GothamSemibold
+SubHeading.Text = "You sure you want to open MagHub?"
+SubHeading.TextColor3 = Color3.fromRGB(125, 125, 125)
+SubHeading.TextSize = 18.000
+SubHeading.TextWrapped = true
+SubHeading.TextXAlignment = Enum.TextXAlignment.Left
+SubHeading.TextYAlignment = Enum.TextYAlignment.Top
+
+Enter.Name = "Enter"
+Enter.Parent = UI
+Enter.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+Enter.BackgroundTransparency = 0.800
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.705667257, 0, 0.799740911, 0)
+Enter.Size = UDim2.new(0, 140, 0, 36)
+Enter.ZIndex = 100
+Enter.AutoButtonColor = false
+Enter.Font = Enum.Font.GothamSemibold
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 206, 110)
+Enter.TextSize = 18.000
+Enter.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/EZZZZ"))()
+end)
+
+UICorner.CornerRadius = UDim.new(0, 7)
+UICorner.Parent = Enter
+
+Cancel.Name = "Cancel"
+Cancel.Parent = UI
+Cancel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Cancel.BackgroundTransparency = 1.000
+Cancel.BorderSizePixel = 0
+Cancel.Position = UDim2.new(0.519195616, 0, 0.799740911, 0)
+Cancel.Size = UDim2.new(0, 96, 0, 36)
+Cancel.ZIndex = 100
+Cancel.AutoButtonColor = false
+Cancel.Font = Enum.Font.GothamSemibold
+Cancel.Text = "Cancel"
+Cancel.TextColor3 = Color3.fromRGB(67, 67, 67)
+Cancel.TextSize = 18.000
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = UI
+DropShadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(-0.105374858, 0, -0.125934839, 0)
+DropShadow.Size = UDim2.new(1.23537493, 0, 1.25, 0)
+DropShadow.Image = "rbxassetid://297694300"
+DropShadow.ImageTransparency = 0.500
+
+input.Name = "input"
+input.Parent = UI
+input.BackgroundTransparency = 1.000
+input.LayoutOrder = 4
+input.Position = UDim2.new(0.0637659952, 0, 0.138390243, 0)
+input.Size = UDim2.new(0, 36, 0, 36)
+input.ZIndex = 999999999
+input.Image = "rbxassetid://3926305904"
+input.ImageColor3 = Color3.fromRGB(0, 248, 195)
+input.ImageRectOffset = Vector2.new(764, 444)
+input.ImageRectSize = Vector2.new(36, 36)
+
+-- Scripts:
+
+local function YHDL_fake_script() -- Enter.Animate 
+	local script = Instance.new('LocalScript', Enter)
+
+	local noob = script.Parent
+	
+	
+	Tween = function(Obj, Time, Settings)	
+		game:GetService("TweenService"):Create(Obj, TweenInfo.new(Time), Settings):Play()
+	end
+	
+	
+	script.Parent.MouseEnter:Connect(function()
+		Tween(noob, 0.5, {BackgroundTransparency = 0.6})
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		Tween(noob, 0.5, {BackgroundTransparency = 0.8})
+	end)
+end
+coroutine.wrap(YHDL_fake_script)()
+local function BCOVC_fake_script() -- Cancel.Script 
+	local script = Instance.new('Script', Cancel)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false 
+	end)
+	
+end
+coroutine.wrap(BCOVC_fake_script)()
