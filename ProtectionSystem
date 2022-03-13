@@ -1,9 +1,11 @@
 --Made By: Mag Developments™
 --Last Updated 3/13/22
 
+
+--Local -- Script
 local MagHub = Instance.new("ScreenGui")
 local UI = Instance.new("Frame")
-local TopBar = Instance.new("Frame")
+local RGBButtonBar = Instance.new("Frame")
 local BottomBar = Instance.new("Frame")
 local Heading = Instance.new("TextLabel")
 local SubHeading = Instance.new("TextLabel")
@@ -12,10 +14,8 @@ local UICorner = Instance.new("UICorner")
 local Cancel = Instance.new("TextButton")
 local DropShadow = Instance.new("ImageLabel")
 local input = Instance.new("ImageButton")
-local DisordLink = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
 local TitleHeading = Instance.new("TextLabel")
-local RGBButtonBar = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
 
 --Properties:
 
@@ -30,13 +30,13 @@ UI.Position = UDim2.new(0.357354164, 0, 0.353272945, 0)
 UI.Size = UDim2.new(0, 547, 0, 246)
 UI.ZIndex = 2
 
-TopBar.Name = "TopBar"
-TopBar.Parent = UI
-TopBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
-TopBar.BorderSizePixel = 0
-TopBar.Position = UDim2.new(0, 0, 1.00813007, 0)
-TopBar.Size = UDim2.new(0, 547, 0, 4)
-TopBar.ZIndex = 100
+RGBButtonBar.Name = "RGBButtonBar"
+RGBButtonBar.Parent = UI
+RGBButtonBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+RGBButtonBar.BorderSizePixel = 0
+RGBButtonBar.Position = UDim2.new(0, 0, 1.00813007, 0)
+RGBButtonBar.Size = UDim2.new(0, 547, 0, 4)
+RGBButtonBar.ZIndex = 100
 
 BottomBar.Name = "BottomBar"
 BottomBar.Parent = UI
@@ -130,32 +130,12 @@ input.ImageColor3 = Color3.fromRGB(0, 248, 195)
 input.ImageRectOffset = Vector2.new(764, 444)
 input.ImageRectSize = Vector2.new(36, 36)
 
-DisordLink.Name = "DisordLink"
-DisordLink.Parent = UI
-DisordLink.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
-DisordLink.BorderSizePixel = 0
-DisordLink.Position = UDim2.new(0.0621571094, 0, 0.789239645, 0)
-DisordLink.Size = UDim2.new(0, 216, 0, 35)
-DisordLink.ZIndex = 100
-DisordLink.AutoButtonColor = false
-DisordLink.Font = Enum.Font.GothamSemibold
-DisordLink.Text = "Copy Discord Link"
-DisordLink.TextColor3 = Color3.fromRGB(0, 0, 0)
-DisordLink.TextSize = 18.000
-DisordLink.MouseButton1Click:Connect(function()
-	setclipboard("https://discord.gg/gbCKX4PzRk")
-end)
-
-
-UICorner_2.CornerRadius = UDim.new(0, 7)
-UICorner_2.Parent = DisordLink
-
 TitleHeading.Name = "TitleHeading"
 TitleHeading.Parent = UI
 TitleHeading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TitleHeading.BackgroundTransparency = 1.000
-TitleHeading.Position = UDim2.new(0.254113227, 0, -1.16260171, 0)
-TitleHeading.Size = UDim2.new(0, 281, 0, 45)
+TitleHeading.Position = UDim2.new(0.489945054, 0, 0.0314481854, 0)
+TitleHeading.Size = UDim2.new(0, 179, 0, 18)
 TitleHeading.ZIndex = 100
 TitleHeading.Font = Enum.Font.GothamSemibold
 TitleHeading.Text = "By: Mag Developments™"
@@ -163,17 +143,17 @@ TitleHeading.TextColor3 = Color3.fromRGB(67, 67, 67)
 TitleHeading.TextSize = 24.000
 TitleHeading.TextXAlignment = Enum.TextXAlignment.Left
 
-RGBButtonBar.Name = "RGBButtonBar"
-RGBButtonBar.Parent = UI
-RGBButtonBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
-RGBButtonBar.BorderSizePixel = 0
-RGBButtonBar.Size = UDim2.new(0, 547, 0, 4)
-RGBButtonBar.ZIndex = 100
+TopBar.Name = "TopBar"
+TopBar.Parent = UI
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 547, 0, 4)
+TopBar.ZIndex = 100
 
 -- Scripts:
 
-local function EDDIJH_fake_script() -- TopBar.Rainbow Effect  
-	local script = Instance.new('Script', TopBar)
+local function VOZIAI_fake_script() -- RGBButtonBar.Rainbow Effect  
+	local script = Instance.new('Script', RGBButtonBar)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
 
@@ -187,8 +167,8 @@ local function EDDIJH_fake_script() -- TopBar.Rainbow Effect
 
 
 end
-coroutine.wrap(EDDIJH_fake_script)()
-local function GUFVMR_fake_script() -- Enter.Animate 
+coroutine.wrap(VOZIAI_fake_script)()
+local function OAVJZKL_fake_script() -- Enter.Animate 
 	local script = Instance.new('LocalScript', Enter)
 
 	local noob = script.Parent
@@ -207,8 +187,8 @@ local function GUFVMR_fake_script() -- Enter.Animate
 		Tween(noob, 0.5, {BackgroundTransparency = 0.8})
 	end)
 end
-coroutine.wrap(GUFVMR_fake_script)()
-local function LVUAN_fake_script() -- Enter.ClickForExploit 
+coroutine.wrap(OAVJZKL_fake_script)()
+local function AZTWP_fake_script() -- Enter.ClickForExploit 
 	local script = Instance.new('Script', Enter)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -216,8 +196,8 @@ local function LVUAN_fake_script() -- Enter.ClickForExploit
 	end)
 
 end
-coroutine.wrap(LVUAN_fake_script)()
-local function BCVIY_fake_script() -- Enter.Rainbow Effect  
+coroutine.wrap(AZTWP_fake_script)()
+local function RIENND_fake_script() -- Enter.Rainbow Effect  
 	local script = Instance.new('Script', Enter)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -232,8 +212,8 @@ local function BCVIY_fake_script() -- Enter.Rainbow Effect
 
 
 end
-coroutine.wrap(BCVIY_fake_script)()
-local function FNWGP_fake_script() -- Cancel.Script 
+coroutine.wrap(RIENND_fake_script)()
+local function IZNOGGE_fake_script() -- Cancel.Script 
 	local script = Instance.new('Script', Cancel)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -241,8 +221,8 @@ local function FNWGP_fake_script() -- Cancel.Script
 	end)
 
 end
-coroutine.wrap(FNWGP_fake_script)()
-local function QICU_fake_script() -- input.Image Rainbow Effect 
+coroutine.wrap(IZNOGGE_fake_script)()
+local function YYNKQP_fake_script() -- input.Image Rainbow Effect 
 	local script = Instance.new('Script', input)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -257,8 +237,8 @@ local function QICU_fake_script() -- input.Image Rainbow Effect
 
 
 end
-coroutine.wrap(QICU_fake_script)()
-local function JECYG_fake_script() -- UI.Dragify 
+coroutine.wrap(YYNKQP_fake_script)()
+local function AGNNO_fake_script() -- UI.Dragify 
 	local script = Instance.new('LocalScript', UI)
 
 	local UIS = game:GetService("UserInputService")
@@ -304,44 +284,8 @@ local function JECYG_fake_script() -- UI.Dragify
 
 	dragify(script.Parent)
 end
-coroutine.wrap(JECYG_fake_script)()
-local function XSXXNTQ_fake_script() -- DisordLink.Animate 
-	local script = Instance.new('LocalScript', DisordLink)
-
-	local noob = script.Parent
-
-
-	Tween = function(Obj, Time, Settings)	
-		game:GetService("TweenService"):Create(Obj, TweenInfo.new(Time), Settings):Play()
-	end
-
-
-	script.Parent.MouseEnter:Connect(function()
-		Tween(noob, 0.5, {BackgroundTransparency = 0.6})
-	end)
-
-	script.Parent.MouseLeave:Connect(function()
-		Tween(noob, 0.5, {BackgroundTransparency = 0.8})
-	end)
-end
-coroutine.wrap(XSXXNTQ_fake_script)()
-local function GIDKQOZ_fake_script() -- DisordLink.Rainbow Effet 
-	local script = Instance.new('Script', DisordLink)
-
-	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
-
-	counter = 0
-
-	while wait(0.1)do
-		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
-
-		counter = counter + 0.01
-	end
-
-
-end
-coroutine.wrap(GIDKQOZ_fake_script)()
-local function OINB_fake_script() -- TitleHeading.Rainbow Effect 
+coroutine.wrap(AGNNO_fake_script)()
+local function DUNKIGS_fake_script() -- TitleHeading.Rainbow Effect 
 	local script = Instance.new('Script', TitleHeading)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -356,9 +300,9 @@ local function OINB_fake_script() -- TitleHeading.Rainbow Effect
 
 
 end
-coroutine.wrap(OINB_fake_script)()
-local function TFOUBX_fake_script() -- RGBButtonBar.Rainbow Effect  
-	local script = Instance.new('Script', RGBButtonBar)
+coroutine.wrap(DUNKIGS_fake_script)()
+local function PGZERJH_fake_script() -- TopBar.Rainbow Effect  
+	local script = Instance.new('Script', TopBar)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
 
@@ -372,5 +316,4 @@ local function TFOUBX_fake_script() -- RGBButtonBar.Rainbow Effect
 
 
 end
-coroutine.wrap(TFOUBX_fake_script)()
-
+coroutine.wrap(PGZERJH_fake_script)()
