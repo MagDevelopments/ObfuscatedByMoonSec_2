@@ -142,7 +142,7 @@ DisordLink.Font = Enum.Font.GothamSemibold
 DisordLink.Text = "Copy Discord Link"
 DisordLink.TextColor3 = Color3.fromRGB(0, 0, 0)
 DisordLink.TextSize = 18.000
-Enter.MouseButton1Click:Connect(function()
+Discord.MouseButton1Click:Connect(function()
 	setclipboard("https://discord.gg/gbCKX4PzRk")
 end)
 
