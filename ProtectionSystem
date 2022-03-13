@@ -1,3 +1,6 @@
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
 local MagHub = Instance.new("ScreenGui")
@@ -17,12 +20,11 @@ local input = Instance.new("ImageButton")
 MagHub.Name = "MagHub"
 MagHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-
 UI.Name = "UI"
 UI.Parent = MagHub
 UI.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
 UI.BorderSizePixel = 0
-UI.Position = UDim2.new(0.386000007, 0, 0.363999993, 0)
+UI.Position = UDim2.new(0.357354164, 0, 0.353272945, 0)
 UI.Size = UDim2.new(0, 547, 0, 246)
 UI.ZIndex = 2
 
@@ -86,6 +88,8 @@ Enter.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/EZZZZ"))()
 end)
 
+
+
 UICorner.CornerRadius = UDim.new(0, 7)
 UICorner.Parent = Enter
 
@@ -127,7 +131,7 @@ input.ImageRectSize = Vector2.new(36, 36)
 
 -- Scripts:
 
-local function TUCKN_fake_script() -- Enter.Animate 
+local function MMOAG_fake_script() -- Enter.Animate 
 	local script = Instance.new('LocalScript', Enter)
 
 	local noob = script.Parent
@@ -146,8 +150,8 @@ local function TUCKN_fake_script() -- Enter.Animate
 		Tween(noob, 0.5, {BackgroundTransparency = 0.8})
 	end)
 end
-coroutine.wrap(TUCKN_fake_script)()
-local function YAQKR_fake_script() -- Enter.Script 
+coroutine.wrap(MMOAG_fake_script)()
+local function NCSWZ_fake_script() -- Enter.Script 
 	local script = Instance.new('Script', Enter)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -155,8 +159,8 @@ local function YAQKR_fake_script() -- Enter.Script
 	end)
 	
 end
-coroutine.wrap(YAQKR_fake_script)()
-local function MYAMP_fake_script() -- Cancel.Script 
+coroutine.wrap(NCSWZ_fake_script)()
+local function OPGZMO_fake_script() -- Cancel.Script 
 	local script = Instance.new('Script', Cancel)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -164,4 +168,51 @@ local function MYAMP_fake_script() -- Cancel.Script
 	end)
 	
 end
-coroutine.wrap(MYAMP_fake_script)()
+coroutine.wrap(OPGZMO_fake_script)()
+local function MGYS_fake_script() -- UI.Dragify 
+	local script = Instance.new('LocalScript', UI)
+
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+	
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+	
+	function dragify(Frame)
+		function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        script.Parent.Position = Position
+		end
+		
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+		end)
+		
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+		end)
+		
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(MGYS_fake_script)()
