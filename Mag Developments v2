@@ -1,0 +1,84 @@
+local DiscordLib =  loadstring(game:HttpGet"https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("Mag Developments")
+
+local serv = win:Server("Main", "")
+
+local btns = serv:Channel("My Exploits")
+
+local d = serv:Channel("Credits")
+
+btns:Button(
+    "Mag Developments V1",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/ProtectionSystem"))()
+    end
+)
+
+btns:Button(
+    "MagHub V1",
+    function()     
+        loadstring(game:HttpGet("https://pastebin.com/raw/1cg3zyR3"))();
+    end
+)
+
+btns:Button(
+    "MagHub V2",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/MagDevelopments/main/MagHubVerison2"))()
+    end
+)
+
+btns:Button(
+    "MagHub V3",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/MagDevelopments/main/MagHubVersion3"))()
+    end
+)
+
+btns:Button(
+    "MagHub V4(NOT WORKING RN)",
+    function()     
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/MagDevelopments/main/UPD4"))()
+    end
+)
+
+btns:Label("NEED HELP? Join our Discord")
+
+btns:Button(
+    "https://discord.gg/gbCKX4PzRk",
+    function()     
+        DiscordLib:Notification("Notification", "Copy Into your browser", "Okay!")
+    end
+)
+
+btns:Button(
+    "Copy Discord Link",
+    function()     
+        setclipboard("https://discord.gg/gbCKX4PzRk")
+    end
+)
+
+
+--Credits
+
+d:Label("NEED HELP? Join our Discord")
+
+d:Button(
+    "https://discord.gg/gbCKX4PzRk",
+    function()     
+        DiscordLib:Notification("Notification", "Copy Into your browser", "Okay!")
+    end
+)
+
+d:Button(
+    "Copy Discord Link",
+    function()     
+        setclipboard("https://discord.gg/gbCKX4PzRk")
+    end
+)
+
+d:Label("")
+
+--Scripts Part
+local ftns win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
