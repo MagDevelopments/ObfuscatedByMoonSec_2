@@ -87,6 +87,13 @@ d:Button(
 
 d:Label("__________________________________________________")
 
+d:Button(
+    "Made By: Mag Developments™",
+    function()     
+        setclipboard("Made By: Mag Developments™")
+    end
+)
+
 --Scripts Part
 local ftns = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
 
