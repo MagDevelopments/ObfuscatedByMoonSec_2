@@ -9,6 +9,13 @@ local btns = serv:Channel("My Exploits")
 local d = serv:Channel("Credits")
 
 btns:Button(
+    "Anti Afk"
+    Function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+    end
+)  
+
+btns:Button(
     "Mag Developments V1",
     function()     
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/ProtectionSystem"))()
