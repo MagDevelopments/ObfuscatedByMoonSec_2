@@ -10,7 +10,7 @@ local d = serv:Channel("Credits")
 
 btns:Button(
     "Anti Afk",
-    Function() 
+    function() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
     end
 )  
