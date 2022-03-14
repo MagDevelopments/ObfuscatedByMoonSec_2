@@ -2,7 +2,7 @@ local DiscordLib =  loadstring(game:HttpGet"https://raw.githubusercontent.com/bl
 
 local win = DiscordLib:Window("Mag Developments")
 
-local serv = win:Server("Main", "")
+local serv = win:Server("Main", "http://www.roblox.com/asset/?id=9098687272")
 
 local btns = serv:Channel("My Exploits")
 
@@ -78,7 +78,216 @@ d:Button(
     end
 )
 
-d:Label("")
+d:Label("__________________________________________________")
 
 --Scripts Part
-local ftns win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
+local ftns = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
+
+local a = ftns:Channel("Help!")
+
+a:Label("NEED HELP? Join our Discord")
+
+
+a:Button(
+    "https://discord.gg/gbCKX4PzRk",
+    function()     
+        DiscordLib:Notification("Notification", "Copy Into your browser", "Okay!")
+    end
+)
+
+a:Button(
+    "Copy Discord Link",
+    function()     
+        setclipboard("https://discord.gg/gbCKX4PzRk")
+    end
+)
+
+a:Label("__________________________________________________")
+
+a:Label("CLICK THE BUTTONS EXECUTE THE SCRIPTS")
+
+local b = ftns:Channel("Football Fusion")
+
+b:Button(
+    "Aki Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1x2x3/Aki/main/loadstring.lua"))();
+    end
+)
+
+
+
+local c = ftns:Channel("Clicker Simulator")
+
+c:Button(
+    "Future Scripts",
+    function()     
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Clicker-Simulator-or-Future-Scripts_855"))()
+    end
+)
+
+c:Button(
+    "Clicker V4",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
+    end
+)
+
+c:Button(
+    "Slighetten X",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/main/Clicker%20Sim.lua", true))()
+    end
+)
+
+
+
+local d = ftns:Channel("RoCitizens")
+
+d:Button(
+    "Variety Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TxlerR8/VARIETY-HUB/main/Variety.lua"))()
+    end
+)
+
+d:Button(
+    "AutoBonus",
+    function()     
+        loadstring(game:HttpGet("https://pastebin.com/raw/wawJbPU9"))() 
+    end
+)
+
+d:Button(
+    "AutoFarm",
+    function()     
+        loadstring(game:HttpGet("https://pastebin.com/raw/MPGymcCf"))()
+    end
+)
+
+local e = ftns:Channel("King Legacy")
+
+e:Button(
+    "Strike Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+    end
+)
+
+e:Button(
+    "Mag Legacy",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+    end
+)
+
+e:Button(
+    "KL Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+    end
+)
+
+e:Button(
+    "Nexus Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+    end
+)
+e:Button(
+    "xDepression Script",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua"))()
+    end
+)
+
+e:Button(
+    "Hulku Hub",
+    function()     
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/HULKUexe/.FreeMAXScript./main/4GAME")()
+    end
+)
+
+local f = ftns:Channel("Arsenal")
+
+f:Button(
+    "MagDevelopments Script",
+    function()     
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/MagDevelopments/main/Arsenal%20Cheat"))()
+    end
+)
+
+f:Button(
+    "Owl Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+    end
+)
+
+f:Button(
+    "DexHub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()
+    end
+)
+
+f:Button(
+    "Bolt Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaytojuice/Bolts-Hub/main/Script/Free_Executors", true))()
+    end
+)
+
+f:Button(
+    "DarkHub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+    end
+)
+
+
+local g = ftns:Channel("Shindo Life")
+
+g:Button(
+    "Spy Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/ShindoLife", true))()
+    end
+)
+
+g:Button(
+    "Snxw Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Web/main/scripts/SnxwHub.txt"))()
+    end
+)
+
+g:Button(
+    "VG Hub",
+    function()     
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end
+)
+
+g:Button(
+    "JRL X Lav",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))()
+    end
+)
+
+local h = ftns:Channel("Dunking Simulaor")
+
+h:Button(
+    "DunkerHub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Run6666/dunking-simulator/main/output-ATzo.lua"))()
+    end
+)
+
+h:Button(
+    "Roxy Rekt",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/roxyrekt/HubORScript/main/Dunking_Simulator.lua"))()
+    end
+)
