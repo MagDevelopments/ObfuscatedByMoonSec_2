@@ -9,7 +9,7 @@ local btns = serv:Channel("My Exploits")
 local d = serv:Channel("Credits")
 
 btns:Button(
-    "Toggle GUI(RightControl)",
+    "Toggle GUI(K)",
     function()     
         Keybind = Enum.KeyCode.RightControl
     end
