@@ -9,6 +9,15 @@ local btns = serv:Channel("My Exploits")
 local d = serv:Channel("Credits")
 
 btns:Button(
+    "Toggle GUI(RightControl)",
+    function()     
+        Keybind = Enum.KeyCode.RightControl
+    end
+)
+
+btns:Label("__________________________________________________")
+
+btns:Button(
     "Advanced Anti-Afk",
     function()     
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
@@ -328,8 +337,22 @@ i:Button(
 local j = ftns:Channel("Build A Boat")
 
 j:Button(
-    "Coming Soon",
+    "1 FO",
     function()     
-        loadstring(game:HttpGet(('https://pastebin.com/raw/unZBieLE'),true))()   
+        loadstring(game:HttpGet("https://pastebin.com/raw/WBux8Zti"))() 
+    end
+)
+
+j:Button(
+    "Vynixius(OP)",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))() 
+    end
+)
+
+j:Button(
+    "M.G Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/MGHUB"))()
     end
 )
