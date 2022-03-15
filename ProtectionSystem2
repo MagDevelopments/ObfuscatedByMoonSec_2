@@ -18,9 +18,9 @@ btns:Button(
 btns:Label("__________________________________________________")
 
 btns:Button(
-    "Advanced Anti-Afk",
+    "Anti-Afk",
     function()     
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/R8QNqPVD"))()
     end
 )
 
