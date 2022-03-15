@@ -307,3 +307,29 @@ h:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/roxyrekt/HubORScript/main/Dunking_Simulator.lua"))()
     end
 )
+
+
+local i = ftns:Channel("Plane Crazy")
+
+i:Button(
+    "MagHub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/Plane%20Crazy"))()
+    end
+)
+
+i:Button(
+    "Plane Crazy Hax V1",
+    function()     
+        loadstring(game:HttpGet(('https://pastebin.com/raw/unZBieLE'),true))()   
+    end
+)
+
+local j = ftns:Channel("Build A Boat")
+
+j:Button(
+    "Coming Soon",
+    function()     
+        loadstring(game:HttpGet(('https://pastebin.com/raw/unZBieLE'),true))()   
+    end
+)
