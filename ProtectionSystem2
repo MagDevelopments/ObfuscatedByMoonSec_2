@@ -1,4 +1,4 @@
-local DiscordLib =  loadstring(game:HttpGet"https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+local DiscordLib =  loadstring(game:HttpGet"https://raw.githubusercontent.com/MagDevelopments/UI-s/main/Discord%20Library")()
 
 local win = DiscordLib:Window("Mag Developments")
 
