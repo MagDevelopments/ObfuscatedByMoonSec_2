@@ -511,7 +511,8 @@ Slider4:SetValue(0.5)
 local Button1 = Section5:CreateButton("Copy Discord Link!", function()
        setclipboard("https://discord.gg/gbCKX4PzRk")
     end)
-Section5:CreateLabel(Need help? Message me on discord @!Mag Developments#2173")
+
+local Label1 = Section5:CreateLabel(Need help? Message me on discord @!Mag Developments#2173")
 
 game.StarterGui:SetCore(
     "SendNotification",
