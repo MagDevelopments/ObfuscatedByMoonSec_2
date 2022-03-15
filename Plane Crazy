@@ -1,5 +1,5 @@
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
-local Window = Flux:Window("Mag Developments", "Plane Crazy", Color3.fromRGB(255, 110, 48), Enum.KeyCode.N)
+local Window = Flux:Window("MagHub", "Plane Crazy", Color3.fromRGB(255, 110, 48), Enum.KeyCode.N)
 local mouse = game.Players.LocalPlayer:GetMouse()
 local uis = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
