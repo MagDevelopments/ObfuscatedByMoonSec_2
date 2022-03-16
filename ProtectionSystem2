@@ -330,7 +330,7 @@ i:Button(
 local j = ftns:Channel("Build A Boat")
 
 j:Button(
-    "1 FO",
+    "F.O Hub",
     function()     
         loadstring(game:HttpGet("https://pastebin.com/raw/WBux8Zti"))() 
     end
@@ -347,5 +347,58 @@ j:Button(
     "M.G Hub",
     function()     
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/MGHUB"))()
+    end
+)
+
+local k = ftns:Channel("DaHood")
+
+
+k:Button(
+    "SoftVortex",
+    function()     
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/1.7/main/.lua........."),true))()
+end
+)
+
+k:Button(
+    "Boxware",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/crypthook/some-shit-script-crack/main/boxware"))()
+end
+)
+
+k:Button(
+    "Coming Soon",
+    function()     
+        DiscordLib:Notification("Notification", "Coming Soon...", "Okay!")
+end
+)
+
+k:Button(
+    "Coming Soon",
+    function()     
+        DiscordLib:Notification("Notification", "Coming Soon...", "Okay!")
+end
+)
+
+
+local l = ftns:Channel("BloxBurg")
+
+l:Button(
+    "DeclinedScripts",
+    function()     
+        loadstring(http_request({Url="https://chroma.temple.cx/scripts/bloxburg.lua", Method="GET"}).Body)()
+    end
+    
+    l:Button(
+    "AlphaX",
+    function()     
+        loadstring(http_request({Url="https://cdn.applebee1558.com/alphax/AlphaX.lua",Method="GET"}).Body)()
+    end
+    
+    l:Button(
+    "BlueQ",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealJMz/BlueQ/main/Script", true))()
     end
 )
