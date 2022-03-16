@@ -389,16 +389,18 @@ l:Button(
     function()     
         loadstring(http_request({Url="https://chroma.temple.cx/scripts/bloxburg.lua", Method="GET"}).Body)()
     end
-    
-    l:Button(
+) 
+   
+ l:Button(
     "AlphaX",
     function()     
         loadstring(http_request({Url="https://cdn.applebee1558.com/alphax/AlphaX.lua",Method="GET"}).Body)()
     end
+)
     
     l:Button(
     "BlueQ",
     function()     
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealJMz/BlueQ/main/Script", true))()
-    end
+    end 
 )
