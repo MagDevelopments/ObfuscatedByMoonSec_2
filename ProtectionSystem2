@@ -443,3 +443,35 @@ local m = ftns:Channel("Blox Fruits")
 )
 
 
+local n = ftns:Channel("Kat")
+
+   n:Button(
+    "Dark Hub",
+    function()     
+        loadstring(game:HttpGet("http://darkhub.xyz/remote-script.lua", true))()
+    end
+)
+
+
+   n:Button(
+    "Kat UI",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/lel69/KAT/main/GUI"))()
+    end
+)
+
+
+   n:Button(
+    "V.G Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub"))()
+    end
+)
+
+ n:Button(
+    "Owl Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+    end
+)
+
