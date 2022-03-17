@@ -100,8 +100,6 @@ d:Button(
 
 --Scripts Part
 local ftns = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
-    Visible = false
-end)
 
 local a = ftns:Channel("Help!")
 
@@ -444,9 +442,4 @@ local m = ftns:Channel("Blox Fruits")
     end
 )
 
-   m:Button(
-    "HoHo Hub",
-    function()     
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
-    end
-)
+
