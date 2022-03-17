@@ -412,21 +412,21 @@ local m = ftns:Channel("Blox Fruits")
     m:Button(
     "Saza Hub",
     function()     
-        loadstring(game:HttpGet"https://scriptblox.com/raw/SAZA-HUB_496")()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/SAZA-HUB_496"))()
     end
 )
 
     m:Button(
     "Maru Hub",
     function()     
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/naypramx/Crack/Script/MaruCracked")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Crack/Script/MaruCracked"))()
     end
 )
 
     m:Button(
     "Fusion Hub",
     function()     
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/fusion1'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SHAREHACK/script/main/fusion1"))()
     end
 )
 
@@ -440,13 +440,13 @@ local m = ftns:Channel("Blox Fruits")
    m:Button(
     "Astro Hub",
     function()     
-        loadstring(game:HttpGet'https://raw.githubusercontent.com/AstroScripter/ASTROHUB/main/Main/BloxFruit-1.lua')()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroScripter/ASTROHUB/main/Main/BloxFruit-1.lua"))()
     end
 )
 
    m:Button(
     "HoHo Hub",
     function()     
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
     end
 )
