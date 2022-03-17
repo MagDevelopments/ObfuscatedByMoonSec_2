@@ -382,7 +382,7 @@ end
 )
 
 
-local l = ftns:Channel("BloxBurg")
+local l = ftns:Channel("Bloxburg")
 
 l:Button(
     "DeclinedScripts",
