@@ -100,6 +100,8 @@ d:Button(
 
 --Scripts Part
 local ftns = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
+    Visible = false
+end)
 
 local a = ftns:Channel("Help!")
 
@@ -403,4 +405,48 @@ l:Button(
     function()     
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealJMz/BlueQ/main/Script", true))()
     end 
+)
+
+local m = ftns:Channel("Blox Fruits")
+    
+    m:Button(
+    "Saza Hub",
+    function()     
+        loadstring(game:HttpGet"https://scriptblox.com/raw/SAZA-HUB_496")()
+    end
+)
+
+    m:Button(
+    "Maru Hub",
+    function()     
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/naypramx/Crack/Script/MaruCracked")()
+    end
+)
+
+    m:Button(
+    "Fusion Hub",
+    function()     
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/fusion1'))()
+    end
+)
+
+    m:Button(
+    "SMZ Hub",
+    function()     
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
+    end
+)
+   
+   m:Button(
+    "Astro Hub",
+    function()     
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/AstroScripter/ASTROHUB/main/Main/BloxFruit-1.lua')()
+    end
+)
+
+   m:Button(
+    "HoHo Hub",
+    function()     
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end
 )
